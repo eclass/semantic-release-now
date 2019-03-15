@@ -1,13 +1,13 @@
 'use strict'
 
+const path = require('path')
 const execa = require('execa')
+const { readJSON } = require('fs-extra')
 const getError = require('./get-error')
 
-module.exports = async (
-  { alias = false },
-  { cwd, env, stdout, stderr, logger }
-) => {
+module.exports = async (_, { cwd, env, stdout, stderr, logger }) => {
   let deployOutput
+  const nowJson = await readJSON(path.resolve(cwd, 'now.json'))
   try {
     logger.log('Deploy app to now.sh')
     const deployResult = execa(
@@ -28,7 +28,7 @@ module.exports = async (
     throw getError('ENOWDEPLOY')
   }
 
-  if (alias) {
+  if (nowJson.alias) {
     try {
       logger.log(`Assigning alias to deployment ${deployOutput.stdout}`)
       const aliasResult = execa(

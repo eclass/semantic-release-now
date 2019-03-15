@@ -36,6 +36,7 @@ describe('Publish', () => {
       path.resolve(cwd, 'index.html'),
       '<h1>@eclass/semantic-release-now</h1>'
     )
+    await writeFile(path.resolve(cwd, 'now.json'), '{"name": ""}')
     mock('execa', execaMock)
     publish = require('../src/publish')
   })
@@ -45,7 +46,7 @@ describe('Publish', () => {
     stderr = new WritableStreamBuffer()
   })
 
-  it('Upload assets', async () => {
+  it('Deploy app', async () => {
     expect(
       await publish({ assets: 'build' }, { cwd, stdout, stderr, logger })
     ).to.be.a('undefined')

@@ -50,15 +50,7 @@ The now authentication configuration is **required** and can be set via [environ
 | ----------- | --------------------------------------------------------------------------------------- |
 | `NOW_TOKEN` | Now token created via [now token](https://zeit.co/account/tokens) |
 
-### Options
-
-| Options           | Description                                    | Default |
-|-------------------|------------------------------------------------|---------|
-| `alias`           | Indicate if is requerid run now alias command. | false   |
-
 ### Examples
-
-The `alias` option can be used to create custom alias:
 
 ```json
 {
@@ -67,9 +59,7 @@ The `alias` option can be used to create custom alias:
     "@semantic-release/npm",
     "@semantic-release/git",
     "@semantic-release/gitlab",
-    ["@eclass/semantic-release-now", {
-      "alias": true
-    }]
+    "@eclass/semantic-release-now"
   ]
 }
 ```
