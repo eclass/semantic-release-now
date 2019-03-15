@@ -50,6 +50,10 @@ The now authentication configuration is **required** and can be set via [environ
 | ----------- | --------------------------------------------------------------------------------------- |
 | `NOW_TOKEN` | Now token created via [now token](https://zeit.co/account/tokens) |
 
+### Now CLI
+
+Is **required** install [now cli](https://www.npmjs.com/package/now) in CI.
+
 ### Examples
 
 ```json
@@ -85,6 +89,42 @@ The now authentication configuration is **required** and can be set via [environ
   ],
   "alias": ["my-awesome-project.now.sh"]
 }
+```
+
+```yml
+# .gitlab-ci.yml
+release:
+  image: node:11-alpine
+  stage: release
+  before_script:
+    - npm i -g --unsafe-perm now
+  script:
+    - npx semantic-release
+  only:
+    - master
+```
+
+```yml
+# .travis.yml
+language: node_js
+cache:
+  directories:
+    - ~/.npm
+node_js:
+  - "11"
+stages:
+  - test
+  - name: deploy
+    if: branch = master
+jobs:
+  include:
+    - stage: test
+      script: npm t
+    - stage: deploy
+      before_script:
+        - npm i -g --unsafe-perm now
+      script: npx semantic-release
+
 ```
 
 ## License
