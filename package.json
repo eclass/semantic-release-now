@@ -1,6 +1,6 @@
 {
   "name": "@eclass/semantic-release-now",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "semantic-release plugin to deploy app with now.sh",
   "main": "src/index.js",
   "scripts": {
