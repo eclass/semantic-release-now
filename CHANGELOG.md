@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/eclass/semantic-release-now/compare/v1.0.0...v1.0.1) (2019-06-13)
+
+
+### Bug Fixes
+
+* **deps:** update dependency fs-extra to v8 ([22257e4](https://github.com/eclass/semantic-release-now/commit/22257e4))
+
 # 1.0.0 (2019-03-15)
 
 
