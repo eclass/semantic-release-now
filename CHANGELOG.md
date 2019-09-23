@@ -1,3 +1,16 @@
+# [2.0.0](https://github.com/eclass/semantic-release-now/compare/v1.0.2...v2.0.0) (2019-09-23)
+
+
+### Bug Fixes
+
+* **deps:** update dependencies ([07ff6b9](https://github.com/eclass/semantic-release-now/commit/07ff6b9))
+* **publish:** fix set alias to production deploy ([ce0b5a6](https://github.com/eclass/semantic-release-now/commit/ce0b5a6))
+
+
+### BREAKING CHANGES
+
+* **publish:** From now the deployments set auto alias with --prod option. Not use subcommand alias.
+
 ## [1.0.2](https://github.com/eclass/semantic-release-now/compare/v1.0.1...v1.0.2) (2019-06-26)
 
 
