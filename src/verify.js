@@ -8,7 +8,7 @@ module.exports = async (_, { cwd }) => {
   if (!process.env.NOW_TOKEN) {
     throw getError('ENONOWTOKEN')
   }
-  if (!await exists(path.resolve(cwd, 'now.json'))) {
+  if (!(await exists(path.resolve(cwd, 'now.json')))) {
     throw getError('ENONOW')
   }
 }

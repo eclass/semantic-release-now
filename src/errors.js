@@ -16,14 +16,17 @@ Please make sure to create an [now token](https://zeit.co/account/tokens) and to
   }),
   ENOWDEPLOY: () => ({
     message: 'Error in `now deploy` command.',
-    details: `Check the [now documentation](https://zeit.co/docs/v2/deployments/basics/).`
+    details:
+      'Check the [now documentation](https://zeit.co/docs/v2/deployments/basics/).'
   }),
   ENOWALIAS: () => ({
     message: 'Error in `now alias` command.',
-    details: `Check the [now documentation](https://zeit.co/docs/v2/deployments/basics/).`
+    details:
+      'Check the [now documentation](https://zeit.co/docs/v2/deployments/basics/).'
   }),
   ENONOW: () => ({
     message: 'Missing `now.json` file.',
-    details: `A [now.json file](https://zeit.co/docs/v2/deployments/configuration/) at the root of your project is required to deploy app.`
+    details:
+      'A [now.json file](https://zeit.co/docs/v2/deployments/configuration/) at the root of your project is required to deploy app.'
   })
 }
