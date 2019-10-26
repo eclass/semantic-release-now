@@ -31,7 +31,7 @@
   "homepage": "https://github.com/eclass/semantic-release-now#readme",
   "dependencies": {
     "@semantic-release/error": "^2.1.0",
-    "execa": "^2.0.4",
+    "execa": "^3.0.0",
     "fs-extra": "^8.1.0"
   },
   "devDependencies": {
