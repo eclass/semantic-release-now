@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/eclass/semantic-release-now/compare/v2.0.0...v2.0.1) (2020-01-14)
+
+
+### Bug Fixes
+
+* **deps:** update dependency execa to v4 ([4c3de83](https://github.com/eclass/semantic-release-now/commit/4c3de83f20a5c869d435d094fbd06d8f79f2540f))
+
 # [2.0.0](https://github.com/eclass/semantic-release-now/compare/v1.0.2...v2.0.0) (2019-09-23)
 
 
