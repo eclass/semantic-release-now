@@ -1,3 +1,10 @@
+## [2.0.2](https://github.com/eclass/semantic-release-now/compare/v2.0.1...v2.0.2) (2020-05-14)
+
+
+### Bug Fixes
+
+* **deps:** update dependency fs-extra to v9 ([055eddb](https://github.com/eclass/semantic-release-now/commit/055eddb9f66cda3ba8ca9f413bf73c72fac8253a))
+
 ## [2.0.1](https://github.com/eclass/semantic-release-now/compare/v2.0.0...v2.0.1) (2020-01-14)
 
 
