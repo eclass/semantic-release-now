@@ -65,7 +65,7 @@
     "tempy": "0.7.1"
   },
   "peerDependencies": {
-    "semantic-release": ">=11.0.0 <18.0.0"
+    "semantic-release": ">=11.0.0 <18.0.0 || ^22.0.0"
   },
   "eslintConfig": {
     "extends": "standard",
@@ -101,9 +101,6 @@
     "extends": [
       "config:js-lib"
     ]
-  },
-  "release": {
-    "extends": "@eclass/semantic-release-npm-github-config"
   },
   "nyc": {
     "extends": "nyc-config-common"
